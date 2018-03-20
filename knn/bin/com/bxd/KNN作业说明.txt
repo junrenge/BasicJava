@@ -1,0 +1,9 @@
+以下文件是作业：
+CalcItem.java
+OneData.java
+ReadTestSet.java
+ReadTrSet.java
+SQLHelper.java
+WriteTestSet.java
+WriteTrainningSet.java
+XuKnn.java

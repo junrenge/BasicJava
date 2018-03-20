@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+  <named-config name="stapp"> 
+  	<!-- 数据库登录名 -->
+  	<property name="user">root</property>
+  	<!-- 数据库登录密码 -->
+    <property name="password">root</property>
+    <!-- 数据库驱动 -->
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+    <!-- 数据库地址 -->
+    <property name="jdbcUrl">jdbc:mysql:///rer?useUnicode=true&amp;characterEncoding=GBK</property>
+  	<!-- 当连接池中的连接耗尽的时候c3p0一次同时获取的连接数 -->
+    <property name="acquireIncrement">5</property>
+    <!-- 连接池一开始维护的连接数 -->
+    <property name="initialPoolSize">10</property>
+    <!-- 最小剩余的连接数 -->
+    <property name="minPoolSize">5</property>
+    <!-- 最大剩余的连接数 -->
+    <property name="maxPoolSize">50</property>
+    <property name="maxStatements">20</property> 
+    <property name="maxStatementsPerConnection">5</property>
+  </named-config>
+</c3p0-config>

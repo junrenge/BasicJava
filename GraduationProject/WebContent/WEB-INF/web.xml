@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true" version="3.0">
+  
+  <servlet>
+    <servlet-name>fahp</servlet-name>
+    <servlet-class>com.xuyixin.servlet.fahpSer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fahp</servlet-name>
+    <url-pattern>/fahp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>eva</servlet-name>
+    <servlet-class>com.xuyixin.servlet.evaSer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>eva</servlet-name>
+    <url-pattern>/eva</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>factor</servlet-name>
+    <servlet-class>com.xuyixin.servlet.factorSer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>factor</servlet-name>
+    <url-pattern>/factor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>risk</servlet-name>
+    <servlet-class>com.xuyixin.servlet.riskSer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>risk</servlet-name>
+    <url-pattern>/risk</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+  	<filter-name>EncodeFilter</filter-name>
+  	<filter-class>com.junrenge.filter.EncodeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>EncodeFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>select</servlet-name>
+    <servlet-class>com.xuyixin.servlet.SelectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>select</servlet-name>
+    <url-pattern>/v1/select</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>eval1</servlet-name>
+    <servlet-class>com.xuyixin.servlet.eval1Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>eval1</servlet-name>
+    <url-pattern>/v1/eval1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>eval2</servlet-name>
+    <servlet-class>com.xuyixin.servlet.eval2Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>eval2</servlet-name>
+    <url-pattern>/v1/eval2</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

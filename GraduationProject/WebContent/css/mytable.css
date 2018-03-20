@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+table.mytable {
+	font-family: verdana, arial, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+	width: 60%;
+}
+
+table.mytable th {
+	background: #b5cfd2 url('blue.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+table.mytable td {
+	/* background: #dcddc0 url('grey.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+	text-align: center */
+	border: 1px solid #C1DAD7; 
+	background: #fff; 
+	font-size:14px; 
+	color: #4f6b72; 
+	width:60px;
+	height:30px;
+	text-align: center
+}
+
